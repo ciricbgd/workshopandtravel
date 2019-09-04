@@ -1,0 +1,51 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative; }
+
+#page1 {
+  background-image: url("../img/website/seaside.jpg"); }
+
+#page2 {
+  background-image: url("../img/website/sunset.jpg"); }
+
+#page3 {
+  background-image: url("../img/website/camping.jpg"); }
+
+.textholder {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+.buttonholder {
+  margin-top: 50px; }
+
+#destinations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  #destinations .destination {
+    background-color: #BBB;
+    position: relative;
+    width: 360px;
+    height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    #destinations .destination img {
+      width: 100%;
+      object-fit: cover; }
+    #destinations .destination .destination-content {
+      position: absolute;
+      bottom: 0;
+      padding: 20px 20px 40px 20px; }
+      #destinations .destination .destination-content h4 {
+        text-align: center;
+        margin-bottom: 20px; }
+      #destinations .destination .destination-content p {
+        text-align: center; }
+
+/*# sourceMappingURL=destinations.css.map */

@@ -1,0 +1,70 @@
+#Onama {
+    color: $secondary-color;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    #onama-left,
+    #onama-right {
+        height: 80%;
+        width: 50%;
+        padding: 50px;
+    }
+    #onama-left {
+        h3 {
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+    #onama-right {
+        display: flex;
+        justify-content: center;
+        img {
+            object-fit: cover;
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+            border: 5px solid $secondary-color;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    #Onama {
+        flex-direction: column;
+        #onama-left,
+        #onama-right {
+            width: 100%;
+        }
+        #onama-left {
+            h3 {
+                font-size: 40px !important;
+            }
+            p {
+                font-size: 20px !important;
+            }
+        }
+        #onama-right {}
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    #Onama {
+        #onama-left {
+            h3 {
+                font-size: 30px !important;
+            }
+            p {
+                font-size: 16px !important;
+            }
+        }
+        #onama-right {
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
